@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @media (max-width:500px) {
+      
+      @keyframes home{
+        0%{opacity: 0;transform: translateX(900%);}
+      80%{opacity: 0.6;width: 400px; height:500px;}
+      100%{opacity: 1;transform: translateX(100%);width: 400px; height:500px;}
+      }
+           
+      
+      #img1{
+        filter: blur(8px);
+        transform: translate3d(300%);
+        animation: home 5s 1;
+      }   
+
+      @keyframes yome{
+        0%{width: 50px;height: 50px; margin-left: 500%; opacity: 0;}
+       80%{opacity: 0.6;}
+       100%{width: 400px;height: 500px;margin-left: 20%;opacity: 1;}
+      }
+
+      #img2{
+        margin-left: -55%;
+        animation: yome 5s 1;
+        
+      }
+      body{
+        background-color: black;
+      }
+    }
+
+    @media (max-width:800px){
+      #img1{
+        margin-left: 20%;
+        width: 200px;
+        height: 200px;
+      }
+      #img2{
+         width: 200px;
+         height: 200px;
+      }
+       
+      .images{
+        margin-right: 17%;
+      }
+      body{
+        background-color: yellow;
+      }
+    }
+      
+    @media (max-width:1000px){
+     .
+      }
+
+    @keyframes effect{
+      0%{opacity: 0;transform: translateX(900%);}
+      80%{opacity: 0.6;width: 400px; height:500px;}
+      100%{opacity: 1;transform: translateX(100%);width: 400px; height:500px;}
+    }
+
+    #img1{
+        width: 400px;
+        height: 500px;
+        border-radius: 10px;       
+        animation: effect 5s 1;
+        transform: translateX(100%);    
+    }
+    
+    @keyframes loops{
+       0%{width: 50px;height: 50px;transform: translateX(-1000%);opacity: 0;}
+       80%{opacity: 0.6;}
+       100%{width: 400px;height: 500px;transform: translateX(120%);opacity: 1;}
+    }
+
+    #img2{
+        width: 400px;
+        height: 500px;
+        border-radius: 10px;  
+        transform: translateX(120%);
+        animation: loops 5s 1;
+        
+    }
+    
+</style>
+<body>
+    <div class="images">
+    <img id="img1" src="https://tallgirlbigworld.com/wp-content/uploads/2019/09/Hannover-Kreuzkirche-1024x1536.jpg">
+    
+    <img id="img2" src="https://foodandtravel.com/assets/img/content/gourmet/shutterstock_1156430959.jpg">
+    </div>
+   
+    
+</body>
+</html>
